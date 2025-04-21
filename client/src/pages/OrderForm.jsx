@@ -51,16 +51,16 @@ const OrderForm = () => {
     try {
 
      
-      const res = await axios.post('https://digital-dinner-backend-01.onrender.com/api/order', orderData);
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/order`, orderData);
  
       if (res.status === 200 || res.status === 201) {
         setOrderPlaced(true);
         setError('');
   
-        // Delay clearing the cart by 2 seconds (adjust the delay time as needed)
+      
         setTimeout(() => {
           dispatch(clearCart());
-        }, 2000); // 2 seconds delay
+        }, 2000); 
   
       }
     } catch (err) {
