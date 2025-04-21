@@ -1,17 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// Async thunk to fetch menu items
 export const fetchMenuItem = createAsyncThunk("menu/fetchMenuItems", async (_, thunkAPI) => {
   try {
-    // Assuming you want to fetch from a live API endpoint
-    const res = await axios.get("https://digital-dinner-new.onrender.com/api/menu", {
-      withCredentials: true,  // If you need to send credentials (like cookies or tokens)
+    const res = await axios.get("http://localhost:5003/api/menu", {
+      withCredentials: true,
     });
     return res.data;
   } catch (error) {
     console.log('Fetch Error:', error.response?.data || error.message || error);
-    // Return the error in a structured way to be handled in the slice
     return thunkAPI.rejectWithValue(error.response?.data || "Failed to fetch menu");
   }
 });

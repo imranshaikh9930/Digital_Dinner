@@ -17,14 +17,14 @@ const SingleMenuItems = () => {
     const fetchMenuItem = async () => {
       try {
         // Fetch the menu item data from the API
-        const response = await axios.get(`https://localhost:5003/api/menu/${id}`);
+        const response = await axios.get(`http://localhost:5003/api/menu/${id}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch menu item');
         }
 
-        const data = await response.json();
-        setMenuItem(data);
+        // const data = await response.json();
+        setMenuItem(response.data);
         setLoading(false);
       } catch (err) {
         setError(err.message);
