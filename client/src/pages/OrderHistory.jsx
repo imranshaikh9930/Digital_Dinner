@@ -20,7 +20,7 @@ const OrderHistory = () => {
     setOrders([]);
 
     try {
-      const response = await axios.get(`https://digital-dinner-backend-2.onrender.com/api/order?phone=${phone}`);
+      const response = await axios.get(`https://digital-dinner-backend-01.onrender.com/api/order?phone=${phone}`);
 
 
       if (response.data.length > 0) {

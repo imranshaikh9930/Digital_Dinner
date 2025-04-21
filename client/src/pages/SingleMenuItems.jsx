@@ -17,7 +17,7 @@ const SingleMenuItems = () => {
     const fetchMenuItem = async () => {
       try {
         // Fetch the menu item data from the API
-        const response = await axios.get(`http://localhost:5003/api/menu/${id}`);
+        const response = await axios.get(`https://digital-dinner-backend-01.onrender.com/api/menu/${id}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch menu item');
