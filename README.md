@@ -94,3 +94,9 @@ module.exports = Order;
 
 This separation of concerns allows each database to do what it does best, resulting in a highly scalable and efficient architecture.
 
+![project-1](https://github.com/user-attachments/assets/24c95a49-8827-4838-b0f8-cf24d9018d25)
+
+![project-2](https://github.com/user-attachments/assets/8753dde0-7a0c-4d3f-b6aa-e832b14f105c)
+![project-3](https://github.com/user-attachments/assets/c0885c57-f3bf-40e3-9a6d-61e9d795b58a)
+![project-4](https://github.com/user-attachments/assets/1f9848d0-e8b0-485d-977e-a191dc962543)
+![project-5](https://github.com/user-attachments/assets/1f368381-f7be-436a-a5f9-83a727c993ef)
