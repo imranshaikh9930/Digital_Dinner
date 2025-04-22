@@ -24,7 +24,6 @@ app.use(express.json());
 app.use("/api/menu",menuRoutes);
 app.use("/api/order", orderRoutes)
 
-
 app.listen(PORT,()=>{
     console.log(`Server is Running on Post ${PORT}`);
     connectDb();
