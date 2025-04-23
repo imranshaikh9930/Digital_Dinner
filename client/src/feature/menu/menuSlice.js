@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const fetchMenuItem = createAsyncThunk("menu/fetchMenuItems", async (_, thunkAPI) => {
   try {
-    const res = await axios.get("c/api/menu", {
+    const res = await axios.get("https://digital-dinner-backend-01.onrender.com/api/menu", {
       withCredentials: true
     });
     return res.data;

@@ -24,10 +24,10 @@ const Menu = () => {
   useEffect(() => {
     if (items.length > 0) {
       const categorizedItems = {
-        Appetizers: items.filter((item) => item.category === 'Appetizers'),
-        'Main Courses': items.filter((item) => item.category === 'Main Courses'),
-        Desserts: items.filter((item) => item.category === 'Desserts'),
-        Drinks: items.filter((item) => item.category === 'Drinks'),
+        Appetizers: items?.filter((item) => item.category === 'Appetizers'),
+        'Main Courses': items?.filter((item) => item.category === 'Main Courses'),
+        Desserts: items?.filter((item) => item.category === 'Desserts'),
+        Drinks: items?.filter((item) => item.category === 'Drinks'),
       };
       setCategories(categorizedItems);
     }
