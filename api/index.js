@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
-  origin: 'https://digital-dinner-frontend-02.onrender.com',  
+  origin: "https://digital-dinner-frontend-02.onrender.com",  
   methods: ['GET', 'POST'],
   credentials: true
 }));

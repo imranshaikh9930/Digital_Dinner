@@ -51,7 +51,7 @@ const OrderForm = () => {
     try {
 
      
-      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/order`, orderData);
+      const res = await axios.post(`https://digital-dinner-backend-01.onrender.com/api/order`, orderData);
  
       if (res.status === 200 || res.status === 201) {
         setOrderPlaced(true);

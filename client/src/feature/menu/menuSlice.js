@@ -3,9 +3,8 @@ import axios from "axios";
 
 export const fetchMenuItem = createAsyncThunk("menu/fetchMenuItems", async (_, thunkAPI) => {
   try {
-    
-    const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/menu`, {
-      withCredentials: true,
+    const res = await axios.get("c/api/menu", {
+      withCredentials: true
     });
     return res.data;
   } catch (error) {

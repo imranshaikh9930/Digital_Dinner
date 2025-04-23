@@ -9,7 +9,7 @@ const Menu = () => {
   const dispatch = useDispatch();
   const { items, loading, error } = useSelector((state) => state.menu);
 
-  // console.log(items);
+  console.log(items);
   const [categories, setCategories] = useState({
     Appetizers: [],
     'Main Courses': [],
