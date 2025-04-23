@@ -23,7 +23,7 @@ const SingleMenuItems = () => {
           throw new Error('Failed to fetch menu item');
         }
 
-        // const data = await response.json();
+       
         setMenuItem(response.data);
         setLoading(false);
       } catch (err) {
